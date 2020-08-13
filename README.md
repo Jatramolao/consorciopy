@@ -126,4 +126,3 @@ INFORMACION ADICIONAL (mas que todo personal):
 se presenta como un recurso moderno y desde un inicio me resulto facil de entender (y replicar).
 - Lo mismo ocurre con Docker, ya que si bien, lo conozco y se de que se trata teoricamente, no lo habia llevado a la práctica (y al parecer resulto).
 - Los creditos del proyecto API en si van a https://fastapi.tiangolo.com/.
-- 
