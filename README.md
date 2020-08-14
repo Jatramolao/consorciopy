@@ -5,7 +5,7 @@ Sobre el proyecto:
 La API permite la creacion y consulta de usuarios y sus items asociados. El "modelo" usuarios contiene los atributos de "email" y "password".
 
 ¿COMO USAR?
-Al ingresar a la URL http:// /docs#/, se puede encontrar un modulo de documentacion y de las funciones disponibles para ejecutar (Swagger UI). Las funciones disponibles son:
+Al ingresar a la URL "https://fastapiconsor-y3cfkypqcq-uc.a.run.app/docs" se puede encontrar un modulo de documentacion y de las funciones disponibles para ejecutar (Swagger UI). Las funciones disponibles son:
 - GET Users: Metodo para consultar todos los usuarios y sus items.
 - POST Users: Metodo para crear un usuario.
 - GET Users/user_id: Metodo para consultar el usuario identificado con el "user_id" y sus items.
@@ -121,8 +121,10 @@ Como recomendacion (y una de las virtudes de FastAPI), utilizar el SwaggerUI par
 - Ejecutamos "docker-compose up --build" para crear la imagen, el contenedor y ejecutarlo.
 - A diferencia de la version en Python, aqui nos dirigimos al http://localhost y encontraremos el mismo mensaje "detail : not found"
 
-INFORMACION ADICIONAL (mas que todo personal):
+INFORMACION ADICIONAL (y experiencia):
 - Si bien, el proyecto se comenzo con la idea de utilizar Flask, por recomendacion de otros colegas, opte por utilizar FastAPI. ¿El motivo? No lo conocia,
 se presenta como un recurso moderno y desde un inicio me resulto facil de entender (y replicar).
 - Lo mismo ocurre con Docker, ya que si bien, lo conozco y se de que se trata teoricamente, no lo habia llevado a la práctica (y al parecer resulto).
 - Los creditos del proyecto API en si van a https://fastapi.tiangolo.com/.
+- Por ultimo, el deploy se encuentra automatizado, ya que fue cargado el proyecto de Github y el Dockerfile como proyecto a la nube de Google. A partir de dicho proyecto, se creo un servicio de Google Run para montar el Dockerfile y levantar el entorno.
+- En cuanto a un mecanismo de seguridad, Google Run permite correr aplicaciones que incluyen certificado HTTPS.
