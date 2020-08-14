@@ -3,9 +3,9 @@
 #Ademas, se importan la libreria de SQLalchemy para vincular las sesiones y cada una de las funciones.
 from sqlalchemy.orm import Session
 
-import models 
-import schemas
-
+#import models 
+#import schemas
+from . import models,schemas
 
 #Por medio de la fucion query() se realizar las diferentes consultas (lectura) sobre la base de datos
 #para cada una de las funciones declaradas.

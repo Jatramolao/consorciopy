@@ -4,7 +4,7 @@ from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 
 #Se crearan las clases heredando Base del archivo database.py
-from database import Base
+from .database import Base
 
 #Se crea la clase y se declara el nombre de la tabla que se guardara en la base de datos.
 #en conjunto con los atributos.
