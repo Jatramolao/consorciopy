@@ -31,6 +31,11 @@ async def db_session_middleware(request: Request, call_next):
 def get_db(request: Request):
     return request.state.db
 
+@app.get("/")
+def home():
+    return {"mensaje":"Holaaaaa!"}
+
+
 #Operaciones y sus URLS de FastAPI
 @app.post("/users/", response_model=schemas.User)
 def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
